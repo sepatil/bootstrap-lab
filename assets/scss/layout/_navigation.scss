@@ -1,0 +1,70 @@
+.navbar {
+  /**
+    Main background color of the navigation bar
+    */
+  background-color: $nav-background;
+
+  .navbar-brand {
+    /**
+    CSS properties of the navbar brand or logo 
+    */
+    color: #fff !important;
+  }
+  .navbar-toggler {
+    /**
+    CSS properties of the toggler icon
+
+    */
+
+    color: #fff !important;
+  }
+
+  /**
+
+  CSS properties of the navbar collapse. When navbar collapse on small screen
+  */
+
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    padding-top: 30px;
+    .navbar-nav {
+      padding-left: 10px;
+      .nav-item {
+        margin-top: 15px;
+        .nav-link {
+          color: #fff;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+      .active {
+        .nav-link {
+          color: green !important;
+        }
+      }
+    }
+  }
+}
+
+/**
+CSS properties of the naviation bar in medium and large screen without collapsing
+*/
+
+.navbar-nav {
+  .nav-item {
+    margin-right: 20px;
+
+    .nav-link {
+      color: #fff;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .active {
+    .nav-link {
+      color: green !important;
+    }
+  }
+}
