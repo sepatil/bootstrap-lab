@@ -2,6 +2,8 @@ on:
   push:
     branches:
       - main
+    branches-ignore:
+      - dev
 name: Production Deploy1
 jobs:
   web-deploy:
