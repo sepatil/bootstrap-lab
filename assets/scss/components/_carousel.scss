@@ -1,0 +1,38 @@
+.carousel {
+  .carousel-inner {
+    .carousel-item {
+      img {
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        height: 100vh;
+      }
+      .carousel-caption {
+        //opacity: 0.9;
+        //box-shadow: 0 0 0 100pc rgba(0, 0, 0, 0.8);
+        top: 0;
+        bottom: auto;
+        h5 {
+          font-size: 50px;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      background-image: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(133, 2, 2, 0.3)
+      );
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}
